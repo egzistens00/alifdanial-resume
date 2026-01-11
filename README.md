@@ -38,14 +38,6 @@ View the resume online:
 
 ---
 
-## Project Structure
-alifdanial-resume/
-├─ index.html #  HTML resume
-├─ Dockerfile # Dockerfile to containerize HTML
-├─ .github/
-│ └─ workflows/
-│ └─ deploy.yml # GitHub Actions workflow
-
 ## Local Testing
 
 1. Build Docker image locally:
@@ -56,6 +48,8 @@ docker run -p 8080:80 resume-html
 
 3.Open in browser:
 http://localhost:8080
+
+---
 
 ## Author 
 Alif Danial
