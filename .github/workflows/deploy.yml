@@ -30,10 +30,10 @@ jobs:
 
       - name: Tag & Push Docker Image
         run: |
-          docker tag resume-html:latest 852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume-html:latest
-          docker push 852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume-html:latest
+          docker tag resume-html:latest 852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume:latest
+          docker push 852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume:latest
 
       - name: Update Kubernetes Deployment
         run: |
-          kubectl set image deployment/resume-deployment resume=852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume-html:latest
+          kubectl set image deployment/resume-deployment resume=852994641284.dkr.ecr.ap-southeast-1.amazonaws.com/resume:latest
 
