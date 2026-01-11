@@ -40,7 +40,7 @@ View the resume online:
 
 ## Project Structure
 alifdanial-resume/
-├─ index.html # Your HTML resume
+├─ index.html #  HTML resume
 ├─ Dockerfile # Dockerfile to containerize HTML
 ├─ .github/
 │ └─ workflows/
